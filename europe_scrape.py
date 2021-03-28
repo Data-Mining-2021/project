@@ -3,7 +3,7 @@ import pandas as pd
 
 
 # note: removed 'WHO', since it was pulling random tweets
-wordsToFilter = ['COVID', 'Kung-flu', 'Mask', 'Vaccine', 'Coronavirus', 'Sanitizer', 'Viral', 
+wordsToFilter = ['COVID', 'Mask', 'Vaccine', 'Coronavirus', 'Sanitizer', 'Viral', 
     'Spread', 'Social distancing', '6 ft', 'Lockdown', 'Wuhan', 'Fauci', 'Pandemic' , 'CDC']
 
 europeanTwitterHandles = {'United Kingdom': ['BorisJohnson', '10DowningStreet', 'GOVUK', 'MayorofLondon'],
