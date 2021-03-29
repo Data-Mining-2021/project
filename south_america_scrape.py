@@ -31,4 +31,4 @@ if __name__ == '__main__':
         columns=['Datetime', 'Tweet Id', 'Text', 'Username', 'Like Count', 'Reply Count', 'Retweet Count', 'Country'])
 
     # further convert to csv file format and export
-    tweetsDf.to_csv('./South America/south_america_tweets.csv', index=False)
+    tweetsDf.to_csv('./South_America/south_america_tweets.csv', index=False)
