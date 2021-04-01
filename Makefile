@@ -1,16 +1,16 @@
 all: data
 data: $(DATA)
 
-DATA=europe/european_tweets.csv africa/african_tweets.csv Pacific/pacific_tweets.csv \
-South_America/south_america_tweets.csv UN/UN_tweets.csv
+DATA=regions/Europe/europe_tweets.csv regions/Africa/africa_tweets.csv regions/Pacific/pacific_tweets.csv \
+regions/South_America/south_america_tweets.csv regions/UN/un_tweets.csv
 
-europe/european_tweets.csv: europe_scrape.py
-	py europe_scrape.py
-africa/african_tweets.csv: africa_scrape.py
-	py africa_scrape.py
-South_America/south_america_tweets.csv: south_america_scrape.py
-	py south_america_scrape.py
-Pacific/pacific_tweets.csv: pacific_scrape.py
-	py pacific_scrape.py
-UN/UN_tweets.csv: UN_scrape.py
-	py UN_scrape.py
+regions/Europe/europe_tweets.csv: scrapers/europe_scrape.py
+	py scrapers/europe_scrape.py
+regions/Africa/africa_tweets.csv: scrapers/africa_scrape.py
+	py scrapers/africa_scrape.py
+regions/South_America/south_america_tweets.csv: scrapers/south_america_scrape.py
+	py scrapers/south_america_scrape.py
+regions/Pacific/pacific_tweets.csv: scrapers/pacific_scrape.py
+	py scrapers/pacific_scrape.py
+regions/UN/un_tweets.csv: scrapers/un_scrape.py
+	py scrapers/un_scrape.py
