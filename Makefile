@@ -14,3 +14,9 @@ regions/Pacific/pacific_tweets.csv: scrapers/pacific_scrape.py scrapers/main_scr
 	py scrapers/pacific_scrape.py
 regions/UN/un_tweets.csv: scrapers/un_scrape.py scrapers/main_scraper.py
 	py scrapers/un_scrape.py
+force-data:
+	py scrapers/un_scrape.py
+	py scrapers/pacific_scrape.py
+	py scrapers/south_america_scrape.py
+	py scrapers/africa_scrape.py
+	py scrapers/europe_scrape.py
