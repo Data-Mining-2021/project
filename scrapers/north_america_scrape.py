@@ -9,4 +9,4 @@ if __name__ == '__main__':
     tweetsDf = scrape_tweets(handles)
 
     # further convert to csv file format and export
-    tweetsDf.to_csv('regions/North_America/north_america_tweets.csv', index=False)
+    tweetsDf.to_csv('../regions/North_America/north_america_tweets.csv', index=False)
